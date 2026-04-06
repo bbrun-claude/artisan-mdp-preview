@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artisan MDP | Peinture, Ravalement, Rénovation — Hauts-de-Seine (92)</title>
+<meta name="description" content="Artisan MDP — peinture intérieure et extérieure, ravalement de façade, rénovation au Plessis-Robinson (92). Devis gratuit. Intervention Île-de-France.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--primary:#2B6CB0;--primary-dark:#1E4E8C;--primary-light:#5B9BD5;--primary-pale:#D6E8F7;--bg:#F4F6F9;--bg-light:#F8FAFB;--text:#1A1A2E;--text-light:#555B6E;--dark:#1A1A2E}
+body{font-family:'Open Sans',sans-serif;color:var(--text);line-height:1.7}
+h1,h2,h3,h4{font-family:'Montserrat',sans-serif;color:var(--text)}
+img{max-width:100%;height:auto}
+a{color:var(--primary);text-decoration:none;transition:color .2s}
+a:hover{color:var(--primary-dark)}
+
+header{background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.06);position:sticky;top:0;z-index:100}
+.header-inner{max-width:1100px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.logo-text{font-family:'Montserrat',sans-serif;font-size:1.2rem;font-weight:700;color:var(--text)}
+.logo-text span{color:var(--primary)}
+.logo-text small{display:block;font-family:'Open Sans',sans-serif;font-size:.7rem;color:var(--text-light);font-weight:400;letter-spacing:.3px;text-transform:uppercase}
+nav{display:flex;gap:22px;align-items:center}
+nav a{color:var(--text);font-weight:500;font-size:.88rem}
+nav a:hover{color:var(--primary)}
+.btn-cta{background:var(--primary);color:#fff!important;padding:9px 22px;border-radius:4px;font-weight:600;font-size:.88rem;transition:background .2s}
+.btn-cta:hover{background:var(--primary-dark)}
+.menu-toggle{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--text)}
+
+.hero{background:linear-gradient(135deg,var(--dark) 0%,#2D3748 100%);color:#fff;min-height:65vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;right:0;width:45%;height:100%;background:var(--primary);opacity:.1;clip-path:polygon(25% 0,100% 0,100% 100%,0 100%)}
+.hero-inner{max-width:1100px;margin:0 auto;padding:60px 24px;position:relative;z-index:1}
+.hero .badge{display:inline-block;background:var(--primary);color:#fff;padding:5px 14px;border-radius:3px;font-size:.72rem;font-weight:700;letter-spacing:.4px;text-transform:uppercase;margin-bottom:18px}
+.hero h1{font-size:2.5rem;font-weight:800;line-height:1.15;margin-bottom:16px;max-width:650px}
+.hero h1 span{color:var(--primary-light)}
+.hero .desc{font-size:1.02rem;color:rgba(255,255,255,.75);margin-bottom:30px;max-width:520px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{background:var(--primary);color:#fff;padding:14px 32px;border-radius:4px;font-weight:700;transition:transform .2s,background .2s;display:inline-block;font-family:'Montserrat',sans-serif}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);color:#fff}
+.btn-outline-w{border:2px solid rgba(255,255,255,.4);color:#fff;padding:12px 28px;border-radius:4px;font-weight:600;transition:all .2s;display:inline-block}
+.btn-outline-w:hover{background:rgba(255,255,255,.1);border-color:#fff;color:#fff}
+
+.bar-accent{background:var(--primary);color:#fff;text-align:center;padding:18px 24px}
+.bar-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:center;gap:48px;flex-wrap:wrap}
+.bar-inner .stat strong{display:block;font-size:1.5rem;font-family:'Montserrat',sans-serif}
+.bar-inner .stat span{font-size:.82rem;opacity:.85}
+
+section{padding:72px 24px}
+.container{max-width:1100px;margin:0 auto}
+.section-title{text-align:center;margin-bottom:44px}
+.section-title h2{font-size:1.9rem;margin-bottom:10px}
+.section-title p{color:var(--text-light);max-width:560px;margin:0 auto;font-size:.93rem}
+.section-title h2::after{content:'';display:block;width:40px;height:3px;background:var(--primary);margin:12px auto 0}
+
+.services-bg{background:var(--bg-light)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-card{background:#fff;border-radius:6px;padding:28px 24px;text-align:center;transition:transform .3s,box-shadow .3s;border-top:3px solid var(--primary)}
+.service-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.07)}
+.service-card .icon{font-size:1.6rem;margin-bottom:10px}
+.service-card h3{font-size:1rem;margin-bottom:10px;font-weight:700}
+.service-card p{font-size:.86rem;color:var(--text-light);line-height:1.6}
+
+.zones-section{background:#fff}
+.zones-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.zone-card{background:var(--bg-light);border-radius:6px;padding:20px;text-align:center}
+.zone-card h3{font-size:.95rem;color:var(--primary-dark);margin-bottom:6px}
+.zone-card p{font-size:.82rem;color:var(--text-light)}
+
+.contact-section{background:var(--bg-light)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact-info h3{font-size:1.2rem;margin-bottom:18px}
+.contact-detail{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px}
+.contact-detail .ico{width:38px;height:38px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.9rem;color:#fff}
+.contact-detail p{font-size:.9rem;color:var(--text-light)}
+.contact-detail strong{color:var(--text);display:block;margin-bottom:2px}
+.map-wrap{width:100%;height:300px;border-radius:6px;overflow:hidden}
+.map-wrap iframe{width:100%;height:100%;border:0}
+
+footer{background:var(--dark);color:rgba(255,255,255,.6);padding:36px 24px;text-align:center;font-size:.83rem}
+footer a{color:rgba(255,255,255,.8)}
+
+@media(max-width:768px){
+.hero h1{font-size:1.8rem}
+.services-grid{grid-template-columns:1fr}
+.zones-grid{grid-template-columns:1fr 1fr}
+.contact-grid{grid-template-columns:1fr}
+nav{display:none;width:100%;flex-direction:column;gap:8px;padding-top:12px}
+nav.active{display:flex}
+.menu-toggle{display:block}
+.bar-inner{gap:20px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="header-inner">
+<div class="logo-text">Artisan <span>MDP</span><small>Peinture - Ravalement - Rénovation</small></div>
+<button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">&#9776;</button>
+<nav>
+<a href="#services">Services</a>
+<a href="#zones">Zones</a>
+<a href="#contact" class="btn-cta">Devis gratuit</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="hero-inner">
+<span class="badge">Le Plessis-Robinson (92) & Île-de-France</span>
+<h1>Peinture & ravalement <span>par un vrai artisan</span></h1>
+<p class="desc">Artisan MDP intervient en peinture intérieure et extérieure, ravalement de façade, rénovation et carrelage dans les Hauts-de-Seine et toute l'Île-de-France. Devis gratuit et travail soigné.</p>
+<div class="hero-btns">
+<a href="tel:0767571675" class="btn-primary">07 67 57 16 75</a>
+<a href="#services" class="btn-outline-w">Nos prestations</a>
+</div>
+</div>
+</section>
+
+<div class="bar-accent">
+<div class="bar-inner">
+<div class="stat"><strong>Île-de-France</strong><span>92, 94, 78, 91, 75</span></div>
+<div class="stat"><strong>Devis gratuit</strong><span>Sans engagement</span></div>
+<div class="stat"><strong>Lun-Sam</strong><span>8h30 - 18h</span></div>
+</div>
+</div>
+
+<section id="services" class="services-bg">
+<div class="container">
+<div class="section-title">
+<h2>Nos prestations</h2>
+<p>Un savoir-faire artisanal au service de votre intérieur et de vos façades</p>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<div class="icon">&#127912;</div>
+<h3>Peinture intérieure & extérieure</h3>
+<p>Mise en peinture de murs, plafonds et boiseries. Produits professionnels Zolpan, Sikkens, Guittet pour une finition durable et soignée.</p>
+</div>
+<div class="service-card">
+<div class="icon">&#127751;</div>
+<h3>Ravalement de façade</h3>
+<p>Nettoyage, réparation, enduit et mise en peinture de façades. Amélioration esthétique et protection de votre bâti contre les intempéries.</p>
+</div>
+<div class="service-card">
+<div class="icon">&#128167;</div>
+<h3>Étanchéité toiture</h3>
+<p>Traitement et entretien de toiture, réparation des infiltrations d'eau, remplacement de tuiles cassées et dégâts de tempête.</p>
+</div>
+<div class="service-card">
+<div class="icon">&#128736;</div>
+<h3>Démolition & déblaiement</h3>
+<p>Démolition contrôlée, évacuation des gravats et préparation de chantier avant rénovation ou reconstruction.</p>
+</div>
+<div class="service-card">
+<div class="icon">&#9632;</div>
+<h3>Carrelage & revêtement</h3>
+<p>Pose de carrelage, faïence et linoléum pour sols et murs. Finitions soignées pour cuisine, salle de bain et pièces de vie.</p>
+</div>
+<div class="service-card">
+<div class="icon">&#128295;</div>
+<h3>Rénovation complète</h3>
+<p>Maçonnerie, placo, isolation, salle de bain. Prise en charge de A à Z de vos projets de rénovation intérieure.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="zones" class="zones-section">
+<div class="container">
+<div class="section-title">
+<h2>Zones d'intervention</h2>
+<p>Nous intervenons dans toute l'Île-de-France</p>
+</div>
+<div class="zones-grid">
+<div class="zone-card">
+<h3>Hauts-de-Seine (92)</h3>
+<p>Le Plessis-Robinson, Clamart, Antony, Boulogne-Billancourt, Puteaux, Clichy...</p>
+</div>
+<div class="zone-card">
+<h3>Val-de-Marne (94)</h3>
+<p>Fresnes, L'Haÿ-les-Roses, Créteil, Orly, Vincennes...</p>
+</div>
+<div class="zone-card">
+<h3>Yvelines (78)</h3>
+<p>Versailles, Chatou, Houilles, Marly-le-Roi...</p>
+</div>
+<div class="zone-card">
+<h3>Essonne (91)</h3>
+<p>Massy, Palaiseau, Évry, Savigny-sur-Orge...</p>
+</div>
+<div class="zone-card">
+<h3>Paris (75)</h3>
+<p>Tous arrondissements</p>
+</div>
+<div class="zone-card">
+<h3>Seine-et-Marne (77)</h3>
+<p>Sur devis selon localisation</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact-section">
+<div class="container">
+<div class="contact-grid">
+<div class="contact-info">
+<h3>Demandez votre devis gratuit</h3>
+<div class="contact-detail">
+<div class="ico">&#128222;</div>
+<div><strong>Téléphone</strong><p>07 67 57 16 75</p></div>
+</div>
+<div class="contact-detail">
+<div class="ico">&#9993;</div>
+<div><strong>Email</strong><p>Entreprise.mdp92@gmail.com</p></div>
+</div>
+<div class="contact-detail">
+<div class="ico">&#128205;</div>
+<div><strong>Adresse</strong><p>6 avenue de la Libération<br>92350 Le Plessis-Robinson</p></div>
+</div>
+<div class="contact-detail">
+<div class="ico">&#128197;</div>
+<div><strong>Horaires</strong><p>Lun-Ven : 8h30 - 18h<br>Samedi : 10h - 15h</p></div>
+</div>
+<div class="contact-detail">
+<div class="ico">&#128179;</div>
+<div><strong>Paiement</strong><p>CB Visa, virement, espèces</p></div>
+</div>
+</div>
+<div class="map-wrap">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627!2d2.2612!3d48.7812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671e1a5e0b3a1%3A0x0!2s6+avenue+de+la+Lib%C3%A9ration%2C+92350+Le+Plessis-Robinson!5e0!3m2!1sfr!2sfr!4v1" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<p>Artisan MDP — Peinture, Ravalement, Rénovation | Le Plessis-Robinson (92)</p>
+<p style="margin-top:8px;">07 67 57 16 75 | Entreprise.mdp92@gmail.com</p>
+</div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t){t.scrollIntoView({behavior:'smooth'});document.querySelector('nav').classList.remove('active')}})});
+</script>
+</body>
+</html>
